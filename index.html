@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  
+</head>
+<body>
+  <div class="ml-5 mt-5">
+    <ul class="nav nav-tabs">
+      <li class="active"><a class="p-5" data-toggle="tab" href="#home">Home</a></li>
+      <li><a class="p-5" data-toggle="tab" href="#menu1">Gallery</a></li>
+      <li><a class="p-5" data-toggle="tab" href="#search">Search</a></li>
+      <li><a class="p-5" data-toggle="tab" href="#contact">Contact</a></li>
+    </ul>
+    <div class="tab-content">
+      <div id="home" class="tab-pane fade in active">
+        <h3>Title of company</h3>
+        <h4>About us</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt velit impedit nobis repellendus explicabo laborum mollitia optio eaque distinctio beatae minima consequatur, odit ipsa nisi, tempore earum maiores, quae id.</p>
+        <h4>Our purpose</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem architecto veniam saepe, maiores maxime natus. Necessitatibus, deserunt quas natus quaerat rem, corporis laudantium nihil doloribus adipisci. Deserunt labore, in illum.</p>
+        <h4>Achievements</h4>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam veniam id ratione labore perferendis ullam nostrum corrupti natus dolore. Illo facilis voluptatem eos, voluptatum provident adipisci, quisquam rem quasi reiciendis?</p>
+        <img src="images/content/two_doc_cat.jpg" alt="" class="home-img">
+      </div>
+      <div id="menu1" class="tab-pane fade">
+        <h3>Saved creatures</h3>
+        <div class="your-class">
+          <div class=""><img class="gallery-img" src="images/content/doc_cat.jpg" alt=""></div>
+          <div class=""><img class="gallery-img" src="images/content/doc_cat.jpg" alt=""></div>
+          <div class=""><img class="gallery-img" src="images/content/doc_cat.jpg" alt=""></div>
+          <div class=""><img class="gallery-img" src="images/content/doc_cat.jpg" alt=""></div>
+          <div class=""><img class="gallery-img" src="images/content/doc_cat.jpg" alt=""></div>
+          <div class=""><img class="gallery-img" src="images/content/doc_cat.jpg" alt=""></div>
+          <div class=""><img class="gallery-img" src="images/content/doc_cat.jpg" alt=""></div>
+          <div class=""><img class="gallery-img" src="images/content/doc_cat.jpg" alt=""></div>
+          <div class=""><img class="gallery-img" src="images/content/doc_cat.jpg" alt=""></div>
+          <div class=""><img class="gallery-img" src="images/content/doc_cat.jpg" alt=""></div>
+        </div>
+      </div>
+      <div id="search" class="tab-pane fade">
+        <div class="header-search">
+          <h1>New Tab App</h1>
+        </div>
+        <form>
+          <input id="item" type="text" placeholder="New" required class="search-input">
+        </form>
+        <button class="my-3">Find</button>
+      </div>
+      <div id="contact" class="tab-pane fade">
+        <div class="contacts">
+          <h2 class="contacts-header"><a href="" class="contacts-link">contacts</a></h2>
+          <p class="contacts-under-title">Sign up for our newsletter to receive updates</p>
+          <div class="form">
+            <form>
+              <input type="text" placeholder="Name" class="input">
+              <input type="tel" placeholder="Phone" class="input">
+              <input type="email" placeholder="E-mail" class="input">
+              <button class="btn">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function(){
+        $(".nav-tabs a").click(function(){
+          $(this).tab('show');
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function(){
+        $('.your-class').slick({
+          slidesToShow: 4   
+        });
+      });
+    </script> 
+    <footer class="footer">
+      <p class="footer-text">Copyright © 2013 Css Author</p>
+    </footer>
+  </body>
+  </html>
